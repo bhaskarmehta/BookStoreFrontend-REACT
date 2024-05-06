@@ -1,0 +1,31 @@
+name: CI Pipeline For the BookStore MERN Project
+
+on:
+   push: 
+     branches:
+       - "master"
+jobs:
+  Build_And_Push_Docker_Image:
+       name: Build and Push Docker iMage to Docker Hub
+       runs-on: ubuntu-latest
+       steps:
+         - name: Checkout the repo
+           uses: actions/checkout@v3
+
+         - name: Login to Docker Hub
+           uses: docker/login-action@v2
+           with:
+             username: ${{secrets.DOCKERHUB_ID}}
+             password: ${{secrets.DOCKERHUB_PASSWORD}}
+
+         - name: Generate unique image  tag
+           id: new_tag
+           run: echo "::set-output name=tag::$(echo ${GITHUB_SHA::8})"    
+
+         - name: Build Docker iMage
+           uses: docker/build-push-action@v2
+           with:
+             context: .  #  Here the . represents the root directory of the repository where the workflow is running. We can change this value if our Dockerfile is located in a different directory.
+             push: true
+             tags: bhasmeht/bookstoreimage:${{ steps.new_tag.outputs.tag }}
+                 

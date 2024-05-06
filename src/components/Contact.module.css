@@ -1,0 +1,66 @@
+.signup_form {
+    position: relative;
+    border: 2px solid;
+    padding: 50px;
+    margin-top: 80px;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+.input_box_size{
+    height: 30px;
+    outline: none;
+    width: 40%;
+}
+
+span{
+    margin-right: 5px;
+}
+h3{
+    margin-bottom: 30px;
+}
+
+.email{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.name{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.mobile{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.login_signup{
+    display: flex;
+    justify-content: center;
+}
+
+.signup_button:hover{
+    background-color: black;
+    color: white;
+}
+
+.signup_button{
+    width: 80px;
+    height: 33px;
+    background-color: rgb(89, 98, 89);
+    border-radius: 4px;
+}
+
+.cross_button {
+    position: absolute;
+    top: -3px;
+    right: 5px; 
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+  }
+
+.login_in_signup{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}  

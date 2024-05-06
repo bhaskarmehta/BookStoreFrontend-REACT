@@ -1,0 +1,11 @@
+.book_image{
+    height: 535px;
+}
+
+.change_color_on_hover:hover{
+    background-color: rgb(24, 25, 26);
+}
+
+.grow_size_on_hover:hover {
+    transform: scale(1.05); /* Increase size by 5% on hover */
+  }

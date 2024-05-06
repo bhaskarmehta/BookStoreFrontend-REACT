@@ -1,0 +1,28 @@
+.flex_container {
+    display: flex;
+    margin-top: 100px;
+    text-align: left;
+  }
+  
+.flex_container div {
+    flex: 1; /* Each child div will take up equal space */
+}
+
+.pink{
+  color: pink;
+}
+
+p{
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+button{
+  margin-top: 20px;
+}
+
+img{
+  width: 500px;
+  margin-left: 20px;
+  height: 320px;
+}

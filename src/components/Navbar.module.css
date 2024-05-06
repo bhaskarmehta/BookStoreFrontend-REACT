@@ -1,0 +1,78 @@
+/* search_input{
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+
+}
+
+.bookStore{
+    font-weight: 600;
+    font-size: 30px;
+} */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 85%;
+    z-index: 1000; /*It Ensure the navbar stays on top of other content */
+  }
+
+  .scrolled {
+    background-color: rgb(225, 198, 202);
+  }
+
+  /* New */
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar_left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_left h1 {
+  margin: 0;
+}
+.navbar_right {
+  display: flex;
+  align-items: center;
+}
+.navbar_right a,
+.navbar_right button {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.search_field {
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.login_button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.login_button:hover {
+  background-color: #fff;
+  color: #333;
+}

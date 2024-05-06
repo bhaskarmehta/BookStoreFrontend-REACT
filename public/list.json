@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Comedy Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 20,
+        "category":"Entertainment",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Physics Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 60,
+        "category":"Crime",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Maths Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 100,
+        "category":"Thriller",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Action Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Robbery Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Crime Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Novel Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 9,
+        "name":"Cinema Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    },
+    {
+        "id": 10,
+        "name":"Comics Book",
+        "title":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptates.",
+        "price": 0,
+        "category":"Free",
+        "image":"/Book.jpg"
+    }
+]
+
