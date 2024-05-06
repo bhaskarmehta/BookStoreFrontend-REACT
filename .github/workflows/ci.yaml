@@ -18,14 +18,14 @@ jobs:
              username: ${{secrets.DOCKERHUB_ID}}
              password: ${{secrets.DOCKERHUB_PASSWORD}}
 
-         - name: Generate unique image  tag
-           id: new_tag
-           run: echo "::set-output name=tag::$(echo ${GITHUB_SHA::8})"    
+        #  - name: Generate unique image  tag
+        #    id: new_tag
+        #    run: echo "::set-output name=tag::$(echo ${GITHUB_SHA::8})"    
 
          - name: Build Docker iMage
            uses: docker/build-push-action@v2
            with:
              context: .  #  Here the . represents the root directory of the repository where the workflow is running. We can change this value if our Dockerfile is located in a different directory.
              push: true
-             tags: bhasmeht/bookstoreimage:${{ steps.new_tag.outputs.tag }}
+             tags: bhasmeht/bookstoreimage:${{github.run_number}}           #${{ steps.new_tag.outputs.tag }} if we want to have some random unique number
                  
