@@ -6,7 +6,7 @@ on:
        - "master"
 jobs:
   Build_And_Push_Docker_Image:
-       name: Build and Push Docker iMage to Docker Hub
+       name: Build and Push Docker image to Docker Hub
        runs-on: ubuntu-latest
        steps:
          - name: Checkout the repo
@@ -22,10 +22,10 @@ jobs:
         #    id: new_tag
         #    run: echo "::set-output name=tag::$(echo ${GITHUB_SHA::8})"    
 
-         - name: Build Docker iMage
+         - name: Build Docker image
            uses: docker/build-push-action@v2
            with:
              context: .  #  Here the . represents the root directory of the repository where the workflow is running. We can change this value if our Dockerfile is located in a different directory.
              push: true
-             tags: bhasmeht/bookstoreimage:${{github.run_number}}           #${{ steps.new_tag.outputs.tag }} if we want to have some random unique number
+             tags: bhasmeht/bookstoreimage:1.1.${{github.run_number}}           #${{ steps.new_tag.outputs.tag }} if we want to have some random unique number
                  
