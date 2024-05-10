@@ -24,7 +24,8 @@ export default function FreeBook() {
     getFreeBook();
   },[])
 
-    const filterData  =  freeBook.filter((freeBook)=>freeBook.category==='Free');
+    // const filterData  =  freeBook.filter((freeBook)=>freeBook.category==='Free');
+    const filterData = Array.isArray(freeBook) ? freeBook.filter((item) => item.category === 'Free') : [];
     var settings = {
         dots: true,
         infinite: false,
