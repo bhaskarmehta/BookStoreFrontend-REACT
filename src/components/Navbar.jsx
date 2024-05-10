@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
@@ -7,7 +8,7 @@ import { useAuth } from '../context/AuthProvider.jsx';
 const Navbar = ()=>{
     const [scrolled,setScrolled]=useState(false);
     const [authUser,setAuthUser] = useAuth();
-    console.log(authUser);
+    // console.log(authUser);
 
     useEffect(()=>{
      const handleScroll = ()=>{

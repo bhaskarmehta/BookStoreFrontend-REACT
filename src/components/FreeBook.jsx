@@ -12,7 +12,7 @@ export default function FreeBook() {
    useEffect(()=>{
     const getFreeBook = async()=>{
      try {
-       //const res =  await axios.get("http://localhost:4000/book"); // For Local
+      //  const res =  await axios.get("http://localhost:4000/book"); // For Local
        const res = await axios.get("http://backend-svc:4000/book");
       //  console.log(res.data);
        setFreeBook(res.data);
