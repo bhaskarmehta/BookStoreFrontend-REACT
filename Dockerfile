@@ -23,7 +23,7 @@ FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy NGINX configuration file
-COPY conf/frontend-nginx.conf /etc/nginx/conf.d/
+COPY conf/nginx.conf /etc/nginx/conf.d/
 
 # Copy built app from previous stage
 COPY --from=build /app/build /usr/share/nginx/html
