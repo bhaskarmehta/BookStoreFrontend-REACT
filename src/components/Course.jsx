@@ -4,7 +4,7 @@ import styles from './Course.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Cards from './Cards';
+import Cards from './Cards.jsx';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 

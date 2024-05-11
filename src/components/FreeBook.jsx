@@ -3,7 +3,7 @@ import styles from './FreeBook.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Cards from './Cards';
+import Cards from './Cards.jsx';
 import axios from 'axios';
 export default function FreeBook() {
 
