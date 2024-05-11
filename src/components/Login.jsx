@@ -20,7 +20,7 @@ function Login() {
             password: data.password,
           };
         // await axios.post("http://localhost:4000/user/login",userInfo) // For Local
-        await axios.post("/login",userInfo) // Running on K8s
+        await axios.post("http://ab90b1872859f4246b0885ebdcee209c-984667905.ap-south-1.elb.amazonaws.com:4000/user/login",userInfo) // Running on K8s
 
       .then((res)=>{
         console.log(res.data);
