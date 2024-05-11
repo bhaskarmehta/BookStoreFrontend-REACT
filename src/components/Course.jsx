@@ -16,7 +16,7 @@ function Course() {
      const getBook = async()=>{
       try {
         // const res =  await axios.get("http://localhost:4000/book"); //For Local
-        const res =  await axios.get("http://ab90b1872859f4246b0885ebdcee209c-984667905.ap-south-1.elb.amazonaws.com:4000/book"); // For K8s Cluster
+        const res =  await axios.get("http://backend-svc.default.svc.cluster.local:4000/book"); // For K8s Cluster
         console.log(res.data);
         setBook(res.data);
       } catch (error) {
