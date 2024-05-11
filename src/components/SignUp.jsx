@@ -21,7 +21,7 @@ function SignUp() {
           password: data.password,
         };
     // await axios.post("http://localhost:4000/user/signup",userInfo) //For Local
-    await axios.post("backend-svc.default.svc.cluster.local:4000/user/signup",userInfo)  // Running on K8s Cluster with Backend Service name backend-svc
+    await axios.post("/user/signup",userInfo)  // Running on K8s Cluster with Backend Service name backend-svc
     .then((res)=>{
       console.log(res.data);
       if(res.data){

@@ -20,7 +20,7 @@ function Login() {
             password: data.password,
           };
         // await axios.post("http://localhost:4000/user/login",userInfo) // For Local
-        await axios.post("backend-svc.default.svc.cluster.local:4000/user/login",userInfo) // Running on K8s
+        await axios.post("/user/login",userInfo) // Running on K8s
 
       .then((res)=>{
         console.log(res.data);
