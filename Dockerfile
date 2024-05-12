@@ -19,11 +19,8 @@ RUN npm run build
 # Stage 2 - Use Nginx for serving your built application
 FROM nginx:alpine
 
-# Remove default NGINX configuration
-RUN rm /etc/nginx/conf.d/default.conf
-
 # Copy NGINX configuration file
-COPY conf/nginx.conf /etc/nginx/conf.d/
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy built app from previous stage
 COPY --from=build /app/ /usr/share/nginx/html
