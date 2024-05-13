@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner';
-import Footer from '../components/Footer';
-import FreeBook from '../components/FreeBook';
+import Navbar from '../components/Navbar.jsx';
+import Banner from '../components/Banner.jsx';
+import Footer from '../components/Footer.jsx';
+import FreeBook from '../components/FreeBook.jsx';
 
 function Home() {
   return (
